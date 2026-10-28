@@ -7,20 +7,20 @@
 ## 체크리스트
 
 | 순서 | 리소스 | 확인 항목 | 상태 | 비고 |
-|------|--------|-----------|------|------|
-| 1 | **EC2 인스턴스** | `Terminated` 상태 확인 (Stop 아님) | [x] | `i-0babbe8xxxxxxxxxx` |
-| 2 | **EBS 볼륨** | 미사용 볼륨 포함 모두 삭제 확인 | [x] | `Delete on termination` 확인 |
-| 3 | **Elastic IP** | 할당된 EIP Release 확인 | [x] | 본 실습에서는 미할당 (확인만) |
-| 4 | **Network Interface** | 잔여 ENI 삭제 확인 | [x] | EC2 종료 시 자동 정리됨 |
-| 5 | **Security Group** | `aws-lab-web-sg` 삭제 확인 | [x] | `sg-0c7971xxxxxxxxxx` |
-| 6 | **Route Table** | Subnet 연결 해제(Disassociate) 후 삭제 | [x] | `rtb-048fc9xxxxxxxxxx` |
-| 7 | **Internet Gateway** | VPC에서 Detach 후 삭제 | [x] | `igw-0ad0e6xxxxxxxxxx` |
-| 8 | **Subnet** | 삭제 확인 | [x] | `subnet-03a1aexxxxxxxxxxx` |
-| 9 | **VPC** | 삭제 확인 (종속 리소스 없을 때) | [x] | `vpc-03a01xxxxxxxxxxxx` |
-| 10 | **NAT Gateway** | 미생성 또는 삭제 확인 | [x] | 생성하지 않음 |
-| 11 | **ELB / ALB** | 미생성 또는 삭제 확인 | [x] | 생성하지 않음 |
-| 12 | **RDS** | 미생성 또는 삭제 확인 | [x] | 생성하지 않음 |
-| 13 | **Billing 확인** | 사용량/요금 항목 확인 (청구 반영 지연 고려) | [x] | 사후 재확인 권장 |
+|------|--------|-----------|:---:|------|
+| 1 | **EC2 인스턴스** | `Terminated` 상태 확인 (Stop 아님) | ✅ | `i-0babbe8xxxxxxxxxx` |
+| 2 | **EBS 볼륨** | 미사용 볼륨 포함 모두 삭제 확인 | ✅ | `Delete on termination` 확인 |
+| 3 | **Elastic IP** | 할당된 EIP Release 확인 | ✅ | 본 실습에서는 미할당 (확인만) |
+| 4 | **Network Interface** | 잔여 ENI 삭제 확인 | ✅ | EC2 종료 시 자동 정리됨 |
+| 5 | **Security Group** | `aws-lab-web-sg` 삭제 확인 | ✅ | `sg-0c7971xxxxxxxxxx` |
+| 6 | **Route Table** | Subnet 연결 해제(Disassociate) 후 삭제 | ✅ | `rtb-048fc9xxxxxxxxxx` |
+| 7 | **Internet Gateway** | VPC에서 Detach 후 삭제 | ✅ | `igw-0ad0e6xxxxxxxxxx` |
+| 8 | **Subnet** | 삭제 확인 | ✅ | `subnet-03a1aexxxxxxxxxxx` |
+| 9 | **VPC** | 삭제 확인 (종속 리소스 없을 때) | ✅ | `vpc-03a01xxxxxxxxxxxx` |
+| 10 | **NAT Gateway** | 미생성 또는 삭제 확인 | ✅ | 생성하지 않음 |
+| 11 | **ELB / ALB** | 미생성 또는 삭제 확인 | ✅ | 생성하지 않음 |
+| 12 | **RDS** | 미생성 또는 삭제 확인 | ✅ | 생성하지 않음 |
+| 13 | **Billing 확인** | 사용량/요금 항목 확인 (청구 반영 지연 고려) | ✅ | 사후 재확인 권장 |
 
 ---
 
